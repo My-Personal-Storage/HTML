@@ -1,0 +1,8 @@
+body {
+  background-image: url("robot.jpg"); /* The image used */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Make the background image fixed */
+  background-size: 100% 100%; /* Background Stretched
+
+  /* background-size: cover; Resize the background image to cover the entire container */
+}
