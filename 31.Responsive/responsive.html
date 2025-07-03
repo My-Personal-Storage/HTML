@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+
+<body>
+    <!-- Responsive Image -->
+    <!-- The width property is set to 100%, which means the image will take up the full width of its container. -->
+    <img src="../images/picture.jpg" style="width:100%;">
+
+    <br>
+
+    <!-- Responsive Image -->
+    <!-- The max-width property overrides the width property if the content is larger than the element. -->
+    <img src="../images/picture.jpg" style="max-width:100%;height:auto;">
+
+    <br>
+
+    <!-- Responsive Image -->
+    <!-- The picture element allows you to display different images for different viewport sizes. -->
+    <picture>
+        <source srcset="../images/picture.jpg" media="(max-width: 600px)">
+        <source srcset="../images/picture.jpg" media="(max-width: 1500px)">
+        <source srcset="../images/picture.jpg">
+        <img src="../images/picture.jpg" alt="Flowers">
+    </picture>
+
+    <br>
+
+    <!-- Responsive Text -->
+    <!-- The font-size property is set to 10vw, which means the text will be 10% of the viewport width. -->
+    <h1 style="font-size:10vw">Hello World</h1>
+
+</body>
+
+</html>
