@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic</title>
+</head>
+
+<style>
+    .all-browsers {
+        margin: 0;
+        padding: 5px;
+        background-color: lightgray;
+    }
+
+    .all-browsers>h1,
+    .browser {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .browser {
+        background: white;
+    }
+
+    .browser>h2,
+    p {
+        margin: 4px;
+        font-size: 90%;
+    }
+
+    aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <!-- Nav Element -->
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav>
+
+    <!-- Element Semantic -->
+    <p> example of semantic element: <code> &lt;img&gt; &lt;/img&gt; </code>,
+        <code> &lt;table&gt; &lt;/table&gt; </code> <code> &lt;form&gt; &lt;/form&gt; </code>
+        <code> &lt;article&gt; &lt;/article&gt; </code> <code> &lt;aside&gt; &lt;/aside&gt; </code>
+        <code> &lt;footer&gt; &lt;/footer&gt; </code> <code> &lt;header&gt; &lt;/header&gt; </code>
+        <code> &lt;main&gt; &lt;/main&gt; </code> <code> &lt;nav&gt; &lt;/nav&gt; </code>
+        <code> &lt;section&gt; &lt;/section&gt; </code> <code> &lt;summary&gt; &lt;/summary&gt; </code>
+        <code> &lt;details&gt; &lt;/details&gt; </code> <code> &lt;mark&gt; &lt;/mark&gt; </code>
+        <code> &lt;time&gt; &lt;/time&gt; </code> <code> &lt;code&gt; &lt;/code&gt; </code>
+        <code> &lt;kbd&gt; &lt;/kbd&gt; </code> <code> &lt;samp&gt; &lt;/samp&gt; </code>
+        <code> &lt;var&gt; &lt;/var&gt; </code> <code> &lt;cite&gt; &lt;/cite&gt; </code>
+        <code> &lt;abbr&gt; &lt;/abbr&gt; </code> <code> &lt;bdi&gt; &lt;/bdi&gt; </code>
+        <code> &lt;bdo&gt; &lt;/bdo&gt; </code> <code> &lt;blockquote&gt; &lt;/blockquote&gt; </code>
+        <code> &lt;del&gt; &lt;/del&gt; </code> <code> &lt;ins&gt; &lt;/ins&gt; </code>
+        <code> &lt;sub&gt; &lt;/sub&gt; </code> <code> &lt;sup&gt; &lt;/sup&gt; </code>
+        <code> &lt;i&gt; &lt;/i&gt; </code> <code> &lt;em&gt; &lt;/em&gt; </code>
+        <code> &lt;strong&gt; &lt;/strong&gt; </code> <code> &lt;u&gt; &lt;/u&gt; </code>
+        <code> &lt;s&gt; &lt;/s&gt; </code> <code> &lt;small&gt; &lt;/small&gt; </code>
+        <code> &lt;big&gt; &lt;/big&gt; </code> <code> &lt;q&gt; &lt;/q&gt; </code>
+        <code> &lt;blockquote&gt; &lt;/blockquote&gt; </code> <code> &lt;del&gt; &lt;/del&gt; </code>
+        <code> &lt;ins&gt; &lt;/ins&gt; </code> <code> &lt;sub&gt; &lt;/sub&gt; </code>
+        <code> &lt;sup&gt; &lt;/sup&gt; </code> <code> &lt;i&gt; &lt;/i&gt; </code>
+    </p>
+    <!-- Non-Semantic Element -->
+    <p> example of non-semantic element: <code> &lt;div&gt; &lt;/div&gt; </code>,
+        <code> &lt;span&gt; &lt;/span&gt; </code>
+    </p>
+
+    <!-- Section Element -->
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.</p>
+    </section>
+
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+            Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+            WWF.</p>
+    </section>
+
+    <!-- Article Element -->
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+    </article>
+
+    <!-- Footer Element -->
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+    <!-- Aside Element -->
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <figure>
+        <img src="../images/picture.jpg" alt="Trulli">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <!-- Figure Element -->
+    <figure>
+        <img src="../images/picture.jpg" alt="Trulli">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+</body>
+
+</html>
