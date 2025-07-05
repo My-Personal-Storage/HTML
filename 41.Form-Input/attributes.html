@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Attributes</title>
+</head>
+
+<body>
+    <!-- The Value Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The Readonly Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+    </form>
+
+    <br>
+    <hr>
+
+    <!-- The Disabled Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The Size Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" size="40"><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The Maxlength Attribute -->
+    <form action="">
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    </form>
+
+    <br>
+    <hr>
+    <!-- The min and max Attribute -->
+    <form action="">
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+
+    <br>
+    <hr>
+    <!-- The multiple Attribute -->
+    <form action="">
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The pattern Attribute -->
+    <form action="">
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+
+    <br>
+    <hr>
+    <!-- The placeholder Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First name"><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The required Attribute -->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The step Attribute -->
+    <form>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+    </form>
+
+    <br>
+    <hr>
+    <!-- The autofocus Attribute -->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The height and width Attribute -->
+    <form>
+        <input type="image" src="../images/picture.jpg" alt="Submit" width="48" height="48">
+    </form>
+
+    <br>
+    <hr>
+    <!-- The list Attribute -->
+    <form>
+        <label for="cars">Choose a car:</label>
+        <input type="text" id="cars" name="cars" list="carlist">
+        <datalist id="carlist">
+            <option value="Volvo">
+            <option value="Saab">
+            <option value="Mercedes">
+            <option value="Audi">
+        </datalist>
+    </form>
+
+    <br>
+    <hr>
+    <!-- The autocomplete Attribute -->
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
