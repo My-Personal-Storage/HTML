@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Browser test for Web Storage API</h1>
+
+    <div id="result"></div>
+
+
+    <!-- Local Storage -->
+    <script>
+        const x = document.getElementById("result");
+
+        if (typeof (Storage) !== "undefined") {
+            // Store
+            localStorage.setItem("lastname", "Smith");
+            localStorage.setItem("bgcolor", "yellow");
+
+            // Retrieve
+            x.innerHTML = localStorage.getItem("lastname");
+            x.style.backgroundColor = localStorage.getItem("bgcolor");
+        }
+        else {
+            x.innerHTML = "Sorry, no Web storage support!";
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Counting Clicks with localStorage -->
+
+    <button onclick="clickCounter()" type="button">Click me!</button>
+    <p id="demo"></p>
+    <script>
+        function clickCounter() {
+            const x = document.getElementById("demo");
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                x.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+            } else {
+                x.innerHTML = "Sorry, no Web storage support!";
+            }
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- The sessionStorage Object -->
+
+    <h1>The sessionStorage Object</h1>
+
+    <button onclick="clickCounter2()" type="button">Click me!</button>
+    <p id="demo2"></p>
+
+    <script>
+        function clickCounter2() {
+            const x = document.getElementById("demo2");
+            if (typeof (Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+            } else {
+                x.innerHTML = "Sorry, no Web storage support!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
